@@ -4,7 +4,7 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
+    <parent>
 		<groupId>com.macys.store</groupId>
 		<artifactId>store-master</artifactId>
 		<version>1.0.0</version>
@@ -13,7 +13,7 @@
 	<groupId>com.macys.store.service</groupId>
 	<artifactId>store-service</artifactId>
 	<name>store-service</name>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>

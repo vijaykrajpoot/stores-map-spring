@@ -10,14 +10,15 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 //@EnableAutoConfiguration
 //@Configuration
 //@EnableWebMvc
-public class SpringBootWebApplication extends SpringBootServletInitializer {
+public class StoreWebApplication extends SpringBootServletInitializer {
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringBootWebApplication.class);
+		return application.sources(StoreWebApplication.class);
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootWebApplication.class, args);
+
+		SpringApplication.run(StoreWebApplication.class, args);
 	}
 
 }
