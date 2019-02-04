@@ -14,7 +14,7 @@ import com.google.maps.model.GeocodingResult;
 public class GetLatLngTask implements Callable<Sdd> {
 	private Logger log = LoggerFactory.getLogger(GetLatLngTask.class);
 	private Sdd sdd;
-	static GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyCAeq78kvgSx4px62xk93wCMkdm79gmG1c")
+	static GeoApiContext context = new GeoApiContext.Builder().apiKey("QWQWQWQWQWQW")
 			.build();
 	private static String SP = " ";
 
