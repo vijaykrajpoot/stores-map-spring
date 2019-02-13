@@ -13,7 +13,7 @@
 	<groupId>com.macys.store.service</groupId>
 	<artifactId>store-service</artifactId>
 	<name>store-service</name>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>

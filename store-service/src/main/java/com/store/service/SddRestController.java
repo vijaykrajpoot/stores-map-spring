@@ -32,7 +32,7 @@ public class SddRestController {
 
 	@RequestMapping(method = RequestMethod.GET, value= "/stores" )
 	public ResponseEntity<List<SddStore>> getAllSddStores() {
-		log.debug("getSddStores:Invoked");
+		log.debug("getAllStoreServedLocation:Invoked==>"+sddService.getSddStores().size());
 		return new ResponseEntity<List<SddStore>>(sddService.getSddStores(),HttpStatus.OK);
 	}
 	

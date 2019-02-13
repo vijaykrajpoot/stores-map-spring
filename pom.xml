@@ -136,8 +136,8 @@
 	</build>
 	<modules>
 		<module>store-service</module>
-		<module>store-web</module>
 		<module>store-latlng</module>
+		<module>store-web</module>
 
 	</modules>
 </project>

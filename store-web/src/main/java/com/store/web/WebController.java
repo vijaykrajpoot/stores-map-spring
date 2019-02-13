@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class WebController {
 	private Logger log = LoggerFactory.getLogger(WebController.class);
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	String index() {
-		log.debug("WebController:invoked");
+	String getAllSddStore() {
+		log.debug("WebController:invoked:getAllSddStore");
 		return "index";
 	}
 
