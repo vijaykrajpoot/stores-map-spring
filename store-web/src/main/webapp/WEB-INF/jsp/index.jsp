@@ -14,10 +14,6 @@
 <div ng-controller="UserCRUDCtrl" data-ng-init="init()">
 
     <br /> <br />
-
-    <p style="color: green">{{message}}</p>
-    <p style="color: red">{{errorMessage}}</p>
-
     <%--<a ng-click="getAllStores()">Get all Stores</a><br />--%>
     <%--<br /> <br />--%>
     <%--<div ng-repeat="store in stores">--%>

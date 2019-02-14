@@ -11,6 +11,8 @@ import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 import com.google.gson.Gson;
@@ -22,16 +24,21 @@ import com.store.service.domain.Sdd;
 import com.store.service.domain.SddStore;
 
 @Service
+@PropertySource(ignoreResourceNotFound = true, value = "classpath:sddmap_service.properties")
+
 public class SddMapServiceInit {
 	private HashMap<String, List<Sdd>> storeServedLocationMap = new HashMap<>();
 	private Logger log = LoggerFactory.getLogger(SddMapServiceInit.class);
 	private HashMap<String, SddStore> storeMap = new HashMap<>();
 
+
+	@Value("${sdd.store.latlng.file.json}")
+	private String storeLatLongJsonFile;
 	@PostConstruct
 	void init() {
 		JsonReader jsonReader = null;
 		try {
-			jsonReader = new JsonReader(new FileReader("/Users/m735438/Macys/sdd-map/sdd_store_location_lat_lng.json"));
+			jsonReader = new JsonReader(new FileReader(storeLatLongJsonFile));
 		} catch (FileNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
