@@ -6,6 +6,7 @@ app.controller('SddMapController', ['$scope','$compile','SddMapService', functio
     $scope.init = function () {
         SddMapService.getAllStores()
             .then(function success(response){
+                    vm = this;
                     console.log('Load all stores@init==>'+ response.data);
                     $scope.stores = angular.fromJson(response.data);
                     $scope.message='';
