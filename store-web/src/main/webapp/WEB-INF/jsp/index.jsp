@@ -7,21 +7,14 @@
     <script
             src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="../view/app.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "../view/style.css" />
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAeq78kvgSx4px62xk93wCMkdm79gmG1c"></script>
 
 </head>
 <body>
-<div ng-controller="UserCRUDCtrl" data-ng-init="init()">
+<div ng-controller="SddMapController" data-ng-init="init()">
 
-    <br /> <br />
-    <%--<a ng-click="getAllStores()">Get all Stores</a><br />--%>
-    <%--<br /> <br />--%>
-    <%--<div ng-repeat="store in stores">--%>
-        <%--{{store.storeId}} {{store.storeName}}--%>
-    <%--</div>--%>
-    <%--<div id="map" style="height: 100%; width: 100%; position: relative; top: 0px; left: 0px; overflow:auto"></div>--%>
-
-    <div id="map"></div>
+   <div id="map"></div>
 
 </div>
 </body>

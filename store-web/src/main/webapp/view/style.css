@@ -1,13 +1,5 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 #map {
-    position: static !important;
-    display: block;
-    margin: 0px auto;
-    height: 90%;
-    position: relative;
-    overflow: auto;
+    position: fixed !important;
+    height: 100% !important;
+    width: 100% !important;
 }
