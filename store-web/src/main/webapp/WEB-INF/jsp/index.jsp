@@ -11,10 +11,18 @@
 </head>
 <body>
 <div ng-controller="SddMapController" data-ng-init="init()">
-   <div id="map"></div>
+   <div id="map">
+       Name: <input ng-model="name">
+
+   </div>
 </div>
 
+<p>Input something in the input box:</p>
+<p>Name: <input type="text" ng-model="name"></p>
+<p ng-bind="name"></p>
+<div ng-app="myApp" ng-controller="SddMapController">
 
+</div>
 
 </body>
 </html>

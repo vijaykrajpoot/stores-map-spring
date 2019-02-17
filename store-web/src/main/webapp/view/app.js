@@ -6,7 +6,6 @@ app.controller('SddMapController', ['$scope','$compile','SddMapService', functio
     $scope.init = function () {
         SddMapService.getAllStores()
             .then(function success(response){
-                    vm = this;
                     console.log('Load all stores@init==>'+ response.data);
                     $scope.stores = angular.fromJson(response.data);
                     $scope.message='';
@@ -22,8 +21,6 @@ app.controller('SddMapController', ['$scope','$compile','SddMapService', functio
                     for(var i=0; i <  $scope.stores.length; i++){
                       //  alert('$scope.stores[i].storeLatLng.lat:'+ $scope.stores[i].storeLatLng.lat +'$scope.stores[i].storeLatLng.lng:'+$scope.stores[i].storeLatLng.lng);
                         var content= $scope.stores[i].storeName;
-
-
                         var marker = new google.maps.Marker({
                             position: new google.maps.LatLng($scope.stores[i].storeLatLng.lat, $scope.stores[i].storeLatLng.lng),
                             map: $scope.map,
